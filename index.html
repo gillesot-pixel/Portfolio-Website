@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTG Productions | Owen Gillespie Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <h1 style="font-family: 'Sora', sans-serif;">OTG PRODUCTIONS</h1>
+            <span class="subtext">By Owen Gillespie</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#gallery" class="active">Gallery & Bio</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#commissions">Commissions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ARTIST BIO SECTION -->
+    <section class="bio-section">
+        <div class="bio-container">
+            <div class="bio-image">
+                <!-- Replace with your headshot or portrait -->
+                <img style="background-color: rgb(25, 31, 125); border-color: rgb(25, 31, 125); border-width: 7px;" src="IMG_3350.jpg" alt="Owen Gillespie">
+            </div>
+            <div class="bio-text">
+                <h2>About the Artist</h2>
+                <p>
+                    Hello! I'm <strong>Owen Gillespie</strong>, the creator behind OTG Productions. I specialize in traditional painting, contemporary drawing, and fine art photography. I am currently a sophomore at Miami University studying Studio Art and Emerging Technology in Business Design.
+                </p>
+                <p>
+                    Browse through my recent work below! Original artworks and prints are listed with prices. For merch, custom work, or inquiries, check out the Shop and Commission pages.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 1: GALLERY SECTION -->
+    <main id="gallery" class="page-section">
+        <div class="section-title">
+            <h2 style="font-family: 'Sora', sans-serif;">Gallery</h2>
+            <p>Explore original paintings, drawings, digital pieces, and photography</p>
+        </div>
+
+        <!-- FILTER & SORT CONTROLS BAR -->
+        <div class="controls-bar">
+            <div class="filter-group">
+                <span class="filter-label">Filter Medium:</span>
+                <button class="filter-btn active">All Work</button>
+                <button class="filter-btn">Paintings</button>
+                <button class="filter-btn">Drawings</button>
+                <button class="filter-btn">Photography</button>
+                <button class="filter-btn">Digital / Mixed</button>
+            </div>
+            
+            <div class="sort-group">
+                <label for="sort-select" class="sort-label">Sort By:</label>
+                <select id="sort-select" class="sort-dropdown">
+                    <option value="featured">Featured / Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name-asc">Title: A – Z</option>
+                    <option value="name-desc">Title: Z – A</option>
+                    <option value="size">Size: Largest First</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Scrollable/Grid Feed -->
+        <div class="gallery-grid">
+
+            <!-- Artwork 1 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="IMG_2060%20copy.JPG" alt="Charcoal Still Life 1">
+                    <span class="medium-tag">Painting</span>
+                </div>
+                <div class="art-details">
+                    <h3>Charcoal Still Life 1</h3>
+                    <p class="art-medium">Oil on Canvas &bull; 24" x 36"</p>
+                    <p class="art-description">An abstract exploration of twilight colors, atmospheric warmth, and light.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $450 | Prints from $35</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 2 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="IMG_2104%20copy.JPG" alt="Scrolling">
+                    <span class="medium-tag">Photography</span>
+                </div>
+                <div class="art-details">
+                    <h3>Scrolling</h3>
+                    <p class="art-medium">35mm Black & White Film &bull; 16" x 20"</p>
+                    <p class="art-description">Captured on street film highlighting geometric architectural shadows and grain.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Limited Print: $60</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 3 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="IMG_3884%20copy.JPG" alt="Charcoal Still Life 2">
+                    <span class="medium-tag">Drawing</span>
+                </div>
+                <div class="art-details">
+                    <h3>Charcoal Still Life 2</h3>
+                    <p class="art-medium">Charcoal on Heavyweight Paper &bull; 18" x 24"</p>
+                    <p class="art-description">A deep contrast study exploring subtle gesture and expression.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $280</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 4 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="IMG_3944%20copy.jpg" alt="Oil Pastel Still Life">
+                    <span class="medium-tag">Painting</span>
+                </div>
+                <div class="art-details">
+                    <h3>Oil Pastel Still Life</h3>
+                    <p class="art-medium">Acrylic on Wood Panel &bull; 12" x 12"</p>
+                    <p class="art-description">Minimalist landscape inspired by early morning woodland haze.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $195 | Prints from $25</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 5 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="IMG_5909%20copy.jpg" alt="Solitude at Dawn">
+                    <span class="medium-tag">Photography</span>
+                </div>
+                <div class="art-details">
+                    <h3>Open Ear</h3>
+                    <p class="art-medium">Digital Archival Print &bull; 20" x 30"</p>
+                    <p class="art-description">Long-exposure coastal photography capturing stillness and early gold light.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original Print: $120</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 6 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="IMG_6914%20copy.JPG" alt="Golden Canyon Study">
+                    <span class="medium-tag">Painting</span>
+                </div>
+                <div class="art-details">
+                    <h3>Mom</h3>
+                    <p class="art-medium">Oil on Linen &bull; 30" x 40"</p>
+                    <p class="art-description">Impressionistic desert canyon scene focused on rich ochre pigments.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $620 | Prints from $45</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 7 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="OWG_0688%20copy.JPG" alt="Anatomy in Ink">
+                    <span class="medium-tag">Drawing</span>
+                </div>
+                <div class="art-details">
+                    <h3>Church Light</h3>
+                    <p class="art-medium">India Ink & Pen &bull; 11" x 14"</p>
+                    <p class="art-description">Intricate line-work drawing exploring organic form and movement.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $150</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 8 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="OWG_0710%20copy.JPG" alt="Neon Genesis Studio">
+                    <span class="medium-tag">Digital / Mixed</span>
+                </div>
+                <div class="art-details">
+                    <h3>Fountain</h3>
+                    <p class="art-medium">Digital Illustration & Print &bull; 18" x 24"</p>
+                    <p class="art-description">Vibrant cyber-aesthetic artwork created with custom digital painting brushes.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Giclée Print: $50</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 9 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="image2%20(1)%20copy.jpeg" alt="Rust & Resonance">
+                    <span class="medium-tag">Digital / Mixed</span>
+                </div>
+                <div class="art-details">
+                    <h3>Billiards</h3>
+                    <p class="art-medium">Mixed Media on Canvas &bull; 36" x 48"</p>
+                    <p class="art-description">Heavy impasto texture incorporating metallic powders and acrylic glazes.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $850</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 10 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="OWG_0309%20copy%202.JPG" alt="Forest Floor Geometry">
+                    <span class="medium-tag">Photography</span>
+                </div>
+                <div class="art-details">
+                    <h3>Airshow</h3>
+                    <p class="art-medium">Macro Photography Print &bull; 12" x 18"</p>
+                    <p class="art-description">Detailed close-up study of natural patterns, moss, and autumn tones.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Limited Print: $40</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 11 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="IMG_9869%20copy.JPG" alt="Overcast Reflection">
+                    <span class="medium-tag">Painting</span>
+                </div>
+                <div class="art-details">
+                    <h3>Blue Angels</h3>
+                    <p class="art-medium">Watercolor on Arches Paper &bull; 9" x 12"</p>
+                    <p class="art-description">Fluid watercolor study of rain-slicked city streets and soft light.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $135</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 12 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="image0%20copy%202.jpeg" alt="Contour of Silence">
+                    <span class="medium-tag">Drawing</span>
+                </div>
+                <div class="art-details">
+                    <h3>Truck</h3>
+                    <p class="art-medium">Graphite & White Chalk &bull; 20" x 26"</p>
+                    <p class="art-description">Continuous line drawing on toned tan paper highlighting natural form.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $310</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 13 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="image1%20copy.jpeg" alt="Amber Wave Series #2">
+                    <span class="medium-tag">Painting</span>
+                </div>
+                <div class="art-details">
+                    <h3>Beach with friends</h3>
+                    <p class="art-medium">Acrylic on Canvas &bull; 24" x 24"</p>
+                    <p class="art-description">Warm tonal study featuring layers of burnt orange and warm gold ochre.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Original: $380 | Prints from $30</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 14 -->
+            <article class="art-card">
+                <div class="art-img-wrapper">
+                    <img src="image3%20copy.jpeg" alt="Chronicles of Iron">
+                    <span class="medium-tag">Photography</span>
+                </div>
+                <div class="art-details">
+                    <h3>Bikes</h3>
+                    <p class="art-medium">Monochrome Print &bull; 24" x 36"</p>
+                    <p class="art-description">Industrial structure photography focusing on rhythm, grid, and texture.</p>
+                    <div class="art-purchase">
+                        <span class="art-price">Limited Print: $95</span>
+                        <a href="#commissions" class="btn btn-outline">Inquire to Buy</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- PAGE 2: SHOP SECTION -->
+    <section id="shop" class="page-section shop-bg">
+        <div class="section-title">
+            <h2 style="font-family: 'Sora', sans-serif;">OTG Merch & Shop</h2>
+            <p>Apparel, art prints, and exclusive merchandise</p>
+        </div>
+
+        <div class="shop-grid">
+
+            <div class="product-card">
+                <img src="https://picsum.photos/id/1059/600/600" alt="OTG Logo Heavyweight Hoodie">
+                <h3>OTG Studio Hoodie</h3>
+                <p class="price">$55.00</p>
+                <p class="product-desc">Heavyweight cotton hoodie with embroidered OTG Productions logo.</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/id/1024/600/600" alt="Signature Tee">
+                <h3>Signature Graphic Tee</h3>
+                <p class="price">$30.00</p>
+                <p class="product-desc">Screen-printed art design on soft organic cotton tee.</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/id/1011/600/600" alt="Archival Print Bundle">
+                <h3>Archival Fine Art Print Pack</h3>
+                <p class="price">$45.00</p>
+                <p class="product-desc">Set of three 8x10 matte prints of top selected gallery works.</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://picsum.photos/id/1060/600/600" alt="Sticker & Patch Set">
+                <h3>Vinyl Sticker & Patch Pack</h3>
+                <p class="price">$15.00</p>
+                <p class="product-desc">Weatherproof vinyl stickers and woven OTG logo iron-on patch.</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PAGE 3: COMMISSION INQUIRY SECTION -->
+    <section id="commissions" class="page-section">
+        <div class="commission-container">
+            <div class="section-title">
+                <h2 style="font-family: 'Sora', sans-serif;">Commission Inquiries</h2>
+                <p>Have a custom idea in mind? Let's bring it to life.</p>
+            </div>
+
+            <p class="commission-intro">
+                I accept custom requests for acrylic/oil paintings, digital illustrations, and photographic prints. Please fill out the form below with your concept details, size requirements, and timeline.
+            </p>
+
+            <form class="commission-form" action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input style="background-color: #ffffff;" type="text" id="name" name="name" placeholder="Full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input style="background-color: #ffffff;" type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="medium">Preferred Medium</label>
+                        <select id="medium" name="medium">
+                            <option value="painting">Painting (Oil / Acrylic)</option>
+                            <option value="drawing">Drawing (Charcoal / Ink / Graphite)</option>
+                            <option value="photography">Custom Photography Print</option>
+                            <option value="other">Other / Not Sure Yet</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget ($ USD)</label>
+                        <input style="background-color: #ffffff;" type="text" id="budget" name="budget" placeholder="e.g. $200 - $500">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Project Description & Dimensions</label>
+                    <textarea style="background-color: #ffffff; color: #14196a;" id="details" name="details" rows="5" placeholder="Describe your vision, desired canvas/paper dimensions, color schemes, or deadlines..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Submit Commission Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p><strong>OTG PRODUCTIONS</strong> &copy; 2026 Owen Gillespie. All rights reserved.</p>
+            <p class="footer-sub">O &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;T &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G</p>
+        </div>
+    </footer>
+
+</body>
+</html>
